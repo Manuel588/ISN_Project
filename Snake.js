@@ -1,4 +1,6 @@
-    var c = 1;
+/* salut tout le monde*/
+
+  var c = 1;
 	var debut =0;
 	const couleurFond="white";
 	const couleurBord="black";
@@ -16,7 +18,7 @@
 
 
 
-	ctx.fillStyle = couleurFond;     
+	ctx.fillStyle = couleurFond;
     ctx.strokestyle = couleurBord;
     ctx.fillRect(0, 0, canv.width, canv.height);
     ctx.strokeRect(0, 0, canv.width, canv.height);
@@ -33,7 +35,7 @@
 	var vitesse =100;
     var vx =0;
     var vy =12;
-    
+
     document.addEventListener("keydown", controleur);
 
     function corpDuSerpent(partieDuSerpent)
@@ -53,7 +55,7 @@
     function nettoyer()
     {
     ctx.fillStyle="white";
-    ctx.strokestyle="black";	
+    ctx.strokestyle="black";
     ctx.fillRect(0, 0, canv.width, canv.height);
     ctx.strokeRect(0, 0, canv.width, canv.height);
     }
@@ -77,19 +79,19 @@
     	if (GameOver()) return;
 	    setTimeout(function enchainement()
 	    {
-	    	
+
 			dessiner();
-			
+
 
 			if(debut!=0)
 			{
-				nettoyer();     
+				nettoyer();
 		    	mouvement();
 		    	dessiner();
 
 			}
 			avancer();
-		    
+
 	    },vitesse)
     }
 
@@ -139,7 +141,7 @@
 	const collision = serpent[i].x===serpent[0].x && serpent[i].y===serpent[0].y
 	if(collision)
 	{
-	return true 
+	return true
 	}
 	}
 	const hitLeftWall = serpent[0].x < 0;
@@ -215,8 +217,7 @@
         {
             c=0;
         }
-        
+
     }
 
 	avancer();
- 	
