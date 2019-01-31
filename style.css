@@ -1,0 +1,197 @@
+
+.principal
+{	
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+#div1
+{
+	position:absolute;
+	top:1400px;
+	left:48%; 
+	width:330px;
+	height:575px;
+    transform: translate(-50%, -50%);
+	background-image: url("gameboy.png");
+	background-size: 100%;
+
+}
+
+#tabScore
+{
+	position:absolute;
+	top:20px;
+	left:250px;
+}
+
+@keyframes prendre
+{
+	from{top:1400px}
+	to{top:270px}
+}
+
+@keyframes laisser
+{
+	from{top:270px}
+	to{top:1400px}
+}
+
+@keyframes SAD 
+{
+	from{left:250px}
+	to{left:350px}
+}
+
+@keyframes SAG 
+{
+	from{left:350px}
+	to{left:250px}
+}
+
+@keyframes MAH
+{
+	0% {top:20px}
+	50% {top:-40px}
+	60% {top:-40px}
+	100% {top:20px}
+}
+
+.mah
+{
+	animation-name :MAH;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.animation
+{
+	animation-name: prendre;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.versLeBas
+{
+	animation-name: laisser;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.scoreAnimd
+{
+	animation-name :SAD;
+	animation-duration :1s;
+	animation-fill-mode: forwards;
+}
+
+.scoreAnimg
+{
+	animation-name :SAG;
+	animation-duration :1s;
+	animation-fill-mode: forwards;
+}
+
+.div2
+{
+	position:absolute;
+	top: 27.5%;
+	left:50.3%; 
+    transform: translate(-50%, -50%);
+}
+
+#hardMode
+{
+	position:absolute;
+	top:20px;
+	left:41px;
+}
+	
+
+html
+{
+	background-color:black;
+	background-size: cover;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+
+.button1
+{
+	position: absolute;
+	background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+	top: 79.5%;
+	left: 64%;
+}
+
+.button2
+{
+	position: absolute;
+	background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+	top: 70%;
+	left: 80%;
+}
+
+.button3
+{
+	position: absolute;
+	background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+	top: 79%;
+	left: 16%;
+
+}
+
+.button4
+{
+    position: absolute;
+	background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+	top: 73.3%;
+	left: 26.5%;
+
+}
+
+.button5
+{
+	position: absolute;
+	background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+	top: 73.3%;
+	left: 5%;
+
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ArcadeEscape
+	</title>
+
+	<link rel="shortcut icon" href="mario.ico">
+
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<input class="test" type="button"  value="test" onClick="Lconsole()">
+				
+	
+	<div class="principal">
+
+		<canvas id="jeux" width="560" height="560"></canvas>
+						
+			<div id="div1">
+
+				<canvas id="boy" width="330" height="575"></canvas>
+				<canvas id="tabScore" width="50" height="50"></canvas>
+				<canvas id="hardMode" width="250" height="30"></canvas>
+				
+				<input class="button1" type="button"  value="P" onClick="go()">
+				<input class="button2" type="button"  value="R" onClick="Recommencer()">
+				<input class="button3" type="button"   onClick="enlever()">
+				<input class="button4" type="button"   onClick="Cplus()">
+				<input class="button5" type="button"   onClick="Cmoins()">
+
+					<div class="div2">
+						<canvas id="mon_canvas" width="276" height="276"></canvas>
+					</div>
+			</div>		
+	</div>
+		
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+
+
+
+</body>
+</html>
